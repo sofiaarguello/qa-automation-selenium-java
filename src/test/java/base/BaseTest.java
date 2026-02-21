@@ -11,10 +11,19 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.saucedemo.com/");
-    }
+
+    WebDriverManager.chromedriver().setup();
+
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless=new");
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+
+    driver = new ChromeDriver(options);
+    driver.manage().window().maximize();
+    driver.get("https://www.saucedemo.com/");
+}
+    
 
     @AfterMethod
     public void tearDown() {
