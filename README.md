@@ -5,41 +5,30 @@
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
 # qa-automation-selenium-java qa-automation-selenium-java
-Automation testing project developed using Selenium WebDriver with Java and TestNG.
-Implements Page Object Model (POM) design pattern for better scalability and maintainability.
+# E2E Automation Framework - SauceDemo (Standard User Flow)
 
-🛠 Technologies Used
+Este proyecto es un framework de automatización de pruebas de extremo a extremo (E2E) desarrollado para validar los flujos críticos de la plataforma **SauceDemo**. 
 
-Java
+## 🚀 Tecnologías Utilizadas
+* **Lenguaje:** Java 11
+* **Librería:** Selenium WebDriver
+* **Framework de Pruebas:** TestNG
+* **Gestor de Dependencias:** Maven
+* **Patrón de Diseño:** Page Object Model (POM)
+* **Reportes:** TestNG Reports / Extent Reports
 
-Selenium WebDriver
+## 🛠️ Estructura del Proyecto
+El proyecto sigue el patrón **Page Object Model (POM)** para garantizar que el código sea mantenible y reutilizable:
+* `src/main/java/pages`: Contiene las clases que representan las páginas web y sus locatarios.
+* `src/test/java/tests`: Contiene los scripts de prueba organizados por suites.
+* `testng.xml`: Archivo de configuración para la ejecución de pruebas en paralelo o secuencial.
 
-TestNG
+## 🧪 Escenarios Automatizados
+1. **Login:** Validación de credenciales válidas y manejo de errores.
+2. **Carrito de Compras:** Agregar productos y verificar persistencia.
+3. **Checkout:** Flujo completo desde la carga de datos hasta la confirmación de orden.
 
-Maven
-
-ChromeDriver
-
-🧪 Test Cases Automated
-
-Successful login validation
-
-Invalid login validation with error message verification
-
-🧱 Design Pattern
-
-Page Object Model (POM)
-
-Base Test class for setup and teardown
-
-Assertions with TestNG
-
-▶️ How to Run
-
-Clone repository
-
-Open in IntelliJ / Eclipse
-
-Run LoginTest.java
-
-Tests execute automatically in Chrome
+## 🏁 Cómo ejecutar las pruebas
+1. Clonar el repositorio: `git clone https://github.com/sofiaarguello/tu-repo.git`
+2. Navegar a la carpeta: `cd tu-repo`
+3. Ejecutar comando Maven: `mvn test`
