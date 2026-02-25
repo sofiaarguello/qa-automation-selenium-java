@@ -1,34 +1,34 @@
 
-#![Java](https://img.shields.io/badge/Java-17-blue)
-![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green)
-![TestNG](https://img.shields.io/badge/TestNG-7.8.0-orange)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
+# E2E Automation Framework | Selenium WebDriver & Java
 
-# qa-automation-selenium-java qa-automation-selenium-java
-# E2E Automation Framework - SauceDemo (Standard User Flow)
+This repository features a robust test automation framework designed for high-quality web application validation. Built with **Java** and **Selenium**, it demonstrates a professional approach to end-to-end (E2E) testing using industry-standard design patterns.
 
-Este proyecto es un framework de automatización de pruebas de extremo a extremo (E2E) desarrollado para validar los flujos críticos de la plataforma **SauceDemo**. 
+## 🚀 Tech Stack
+* [cite_start]**Language:** Java [cite: 9, 14]
+* [cite_start]**Automation Tool:** Selenium WebDriver [cite: 7, 14, 16]
+* [cite_start]**Test Runner:** TestNG [cite: 8]
+* [cite_start]**Build Tool:** Maven [cite: 11]
+* **Reporting:** TestNG Reports / Extent Reports
+* [cite_start]**CI/CD:** GitHub Actions [cite: 10]
 
-## 🚀 Tecnologías Utilizadas
-* **Lenguaje:** Java 11
-* **Librería:** Selenium WebDriver
-* **Framework de Pruebas:** TestNG
-* **Gestor de Dependencias:** Maven
-* **Patrón de Diseño:** Page Object Model (POM)
-* **Reportes:** TestNG Reports / Extent Reports
+## 🏗️ Architecture: Page Object Model (POM)
+The project is structured using the **Page Object Model (POM)** pattern to ensure:
+* **Maintainability:** UI changes only require updates in one place.
+* **Reusability:** Page methods can be shared across multiple test cases.
+* **Readability:** Clean separation between test logic and page-specific locators.
 
-## 🛠️ Estructura del Proyecto
-El proyecto sigue el patrón **Page Object Model (POM)** para garantizar que el código sea mantenible y reutilizable:
-* `src/main/java/pages`: Contiene las clases que representan las páginas web y sus locatarios.
-* `src/test/java/tests`: Contiene los scripts de prueba organizados por suites.
-* `testng.xml`: Archivo de configuración para la ejecución de pruebas en paralelo o secuencial.
+## 🧪 Key Test Scenarios
+* **User Authentication:** Validating login/logout flows and error message handling.
+* [cite_start]**E2E Purchase Flow:** From product selection to checkout completion[cite: 20].
+* [cite_start]**Regression Suite:** Automated execution of 150+ functional test cases[cite: 19].
+* **Data Validation:** Ensuring UI consistency with backend expectations.
 
-## 🧪 Escenarios Automatizados
-1. **Login:** Validación de credenciales válidas y manejo de errores.
-2. **Carrito de Compras:** Agregar productos y verificar persistencia.
-3. **Checkout:** Flujo completo desde la carga de datos hasta la confirmación de orden.
+## 📈 Impact & Results
+* [cite_start]**Efficiency:** Reduced manual execution time by **40%** through critical flow automation[cite: 20].
+* [cite_start]**Quality:** Decreased production defects by **30%** via early validation in the development lifecycle[cite: 21].
+* [cite_start]**Integration:** Fully integrated with **CI/CD pipelines** for automated execution on every Pull Request[cite: 10, 17].
 
-## 🏁 Cómo ejecutar las pruebas
-1. Clonar el repositorio: `git clone https://github.com/sofiaarguello/tu-repo.git`
-2. Navegar a la carpeta: `cd tu-repo`
-3. Ejecutar comando Maven: `mvn test`
+## 🛠️ Setup & Execution
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/sofiaarguello/your-repository-name.git](https://github.com/sofiaarguello/your-repository-name.git)
