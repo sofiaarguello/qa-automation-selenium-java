@@ -32,3 +32,11 @@ The project is structured using the **Page Object Model (POM)** pattern to ensur
 1. **Clone the repo:**
    ```bash
    git clone [https://github.com/sofiaarguello/your-repository-name.git](https://github.com/sofiaarguello/your-repository-name.git)
+
+   Install dependencies:
+   mvn install
+
+   Run all tests:
+   mvn test
+
+   
